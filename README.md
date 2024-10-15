@@ -1,3 +1,14 @@
+# laf版使用提示
+1. 在laf函数页面添加自定义依赖`@aws-sdk/client-sts`
+2. 在函数列表新建函数如下
+   ![image](https://github.com/user-attachments/assets/3ba9c5eb-4b6e-4dfd-b553-97af1621e139)
+3. 复制项目根目录下的同名函数内容，粘贴到laf中创建的`get-oss-sts`函数中,测试可正常获取后发布
+   ![image](https://github.com/user-attachments/assets/f09157f8-d5d8-4c1a-833b-0fb299517f97)
+4. 注意本项目不需要设置`config.ts`（所以也删除了模板文件），其他步骤在进行了上面步骤后按顺序操作即可
+
+
+
+
 # 中大猫谱猫脸识别
 
 从猫谱小程序云存储拉取猫图，然后训练一个神经网络模型来识别猫猫。
