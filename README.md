@@ -4,7 +4,7 @@
    ![image](https://github.com/user-attachments/assets/3ba9c5eb-4b6e-4dfd-b553-97af1621e139)
 3. 复制项目根目录下的同名函数内容，粘贴到laf中创建的`get-oss-sts`函数中,测试可正常获取后发布
    ![image](https://github.com/user-attachments/assets/f09157f8-d5d8-4c1a-833b-0fb299517f97)
-4. 注意本项目不需要设置`config.ts`（所以也删除了模板文件），其他步骤在进行了上面步骤后按顺序操作即可
+4. 其他步骤在进行了上面步骤后按顺序操作即可
 
 
 
@@ -30,7 +30,7 @@ https://docs.qq.com/doc/DSHhmTkNNYUNYTkpH
 
 1. 在训练服务器（或你的个人PC）上拉取本仓库代码。
 2. 进入`data`目录，执行`npm install`安装依赖。（需要 Node.js 环境，不确定老版本 Node.js 兼容性，建议使用最新版本。）
-3. 复制`config.demo.ts`文件并改名为`config.ts`，填写Laf云环境的`LAF_APPID`；在Laf云后台调试执行`getTempCOS`云函数，复制输出到`config.ts`中。
+3. 复制`config.demo.ts`文件并改名为`config.ts`，填写Laf云环境的`LAF_APPID`；
 4. 执行`npm start`，脚本将根据小程序数据库记录拉取小程序云存储中的图片。
 5. 返回仓库根目录，执行`python -m pip install -r requirements.txt`安装依赖。（需要Python>=3.8。不建议使用特别新版本的 Python，可能有兼容性问题。）
 6. 执行`bash prepare_yolov5.sh`拉取YOLOv5目标检测模型所需的代码，然后下载并预处理模型数据。
