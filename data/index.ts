@@ -15,9 +15,9 @@ const cloud = new Cloud({
 const db = cloud.database();
 
 // 初始化cos
-const cos = getCos();
 
 async function main() {
+    const cos =await getCos();
     stdlog("Scaning local files...", "yellow");
     let localPhotos: {
         [file: string]: {
